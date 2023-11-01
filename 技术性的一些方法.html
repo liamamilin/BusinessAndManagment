@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 技术性的一些方法 | 商业与管理</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 技术性的一些方法 | 商业与管理" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 技术性的一些方法 | 商业与管理" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="米霖" />
+
+
+<meta name="date" content="2023-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="管理.html"/>
+<link rel="next" href="待定.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Business and Management</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#商业领域"><i class="fa fa-check"></i><b>1.1</b> 商业领域：</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#管理领域"><i class="fa fa-check"></i><b>1.2</b> 管理领域：</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#商业相关核心理论和主要观点"><i class="fa fa-check"></i><b>1.3</b> 商业相关核心理论和主要观点</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#管理核心理论和重要观点"><i class="fa fa-check"></i><b>1.4</b> 管理核心理论和重要观点</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#相关学科领域"><i class="fa fa-check"></i><b>1.5</b> 相关学科领域</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="商业.html"><a href="商业.html"><i class="fa fa-check"></i><b>2</b> 商业</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="商业.html"><a href="商业.html#如何理解商业模式"><i class="fa fa-check"></i><b>2.1</b> 如何理解商业模式</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="商业.html"><a href="商业.html#供给方要素"><i class="fa fa-check"></i><b>2.1.1</b> 供给方要素</a></li>
+<li class="chapter" data-level="2.1.2" data-path="商业.html"><a href="商业.html#商品要素"><i class="fa fa-check"></i><b>2.1.2</b> 商品要素</a></li>
+<li class="chapter" data-level="2.1.3" data-path="商业.html"><a href="商业.html#消费方要素"><i class="fa fa-check"></i><b>2.1.3</b> 消费方要素</a></li>
+<li class="chapter" data-level="2.1.4" data-path="商业.html"><a href="商业.html#中介要素商品如何销售出去的"><i class="fa fa-check"></i><b>2.1.4</b> 中介要素(商品如何销售出去的)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="商业.html"><a href="商业.html#更近一步思考"><i class="fa fa-check"></i><b>2.2</b> 更近一步思考</a></li>
+<li class="chapter" data-level="2.3" data-path="商业.html"><a href="商业.html#企业所有权"><i class="fa fa-check"></i><b>2.3</b> 企业所有权</a></li>
+<li class="chapter" data-level="2.4" data-path="商业.html"><a href="商业.html#管理和领导"><i class="fa fa-check"></i><b>2.4</b> 管理和领导</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="商业.html"><a href="商业.html#管理的四种职能"><i class="fa fa-check"></i><b>2.4.1</b> 管理的四种职能</a></li>
+<li class="chapter" data-level="2.4.2" data-path="商业.html"><a href="商业.html#决策涉及哪些步骤"><i class="fa fa-check"></i><b>2.4.2</b> 决策涉及哪些步骤</a></li>
+<li class="chapter" data-level="2.4.3" data-path="商业.html"><a href="商业.html#公司层级结构中的三个管理层级是什么"><i class="fa fa-check"></i><b>2.4.3</b> 公司层级结构中的三个管理层级是什么</a></li>
+<li class="chapter" data-level="2.4.4" data-path="商业.html"><a href="商业.html#管理者要具备哪些能力"><i class="fa fa-check"></i><b>2.4.4</b> 管理者要具备哪些能力</a></li>
+<li class="chapter" data-level="2.4.5" data-path="商业.html"><a href="商业.html#知识管理"><i class="fa fa-check"></i><b>2.4.5</b> 知识管理</a></li>
+<li class="chapter" data-level="2.4.6" data-path="商业.html"><a href="商业.html#控制的五个步骤"><i class="fa fa-check"></i><b>2.4.6</b> 控制的五个步骤</a></li>
+<li class="chapter" data-level="2.4.7" data-path="商业.html"><a href="商业.html#在建构组织的过程中有哪四个主要选择"><i class="fa fa-check"></i><b>2.4.7</b> 在建构组织的过程中有哪四个主要选择</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="商业.html"><a href="商业.html#员工激励"><i class="fa fa-check"></i><b>2.5</b> 员工激励</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="商业.html"><a href="商业.html#赫茨伯格提出的激励因素和保健因素"><i class="fa fa-check"></i><b>2.5.1</b> 赫茨伯格提出的激励因素和保健因素</a></li>
+<li class="chapter" data-level="2.5.2" data-path="商业.html"><a href="商业.html#区分x理论y理论和z理论"><i class="fa fa-check"></i><b>2.5.2</b> 区分X理论、Y理论和Z理论。</a></li>
+<li class="chapter" data-level="2.5.3" data-path="商业.html"><a href="商业.html#目标设定理论期望理论和公平理论的关键原则"><i class="fa fa-check"></i><b>2.5.3</b> 目标设定理论、期望理论和公平理论的关键原则。</a></li>
+<li class="chapter" data-level="2.5.4" data-path="商业.html"><a href="商业.html#人力资源管理"><i class="fa fa-check"></i><b>2.5.4</b> 人力资源管理</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="商业.html"><a href="商业.html#营销"><i class="fa fa-check"></i><b>2.6</b> 营销</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="商业.html"><a href="商业.html#什么是营销"><i class="fa fa-check"></i><b>2.6.1</b> 什么是营销</a></li>
+<li class="chapter" data-level="2.6.2" data-path="商业.html"><a href="商业.html#营销理念由哪三个部分构成"><i class="fa fa-check"></i><b>2.6.2</b> 营销理念由哪三个部分构成？</a></li>
+<li class="chapter" data-level="2.6.3" data-path="商业.html"><a href="商业.html#阐述营销的4p"><i class="fa fa-check"></i><b>2.6.3</b> 阐述营销的4P</a></li>
+<li class="chapter" data-level="2.6.4" data-path="商业.html"><a href="商业.html#开展市场调研有哪些步骤"><i class="fa fa-check"></i><b>2.6.4</b> 开展市场调研有哪些步骤</a></li>
+<li class="chapter" data-level="2.6.5" data-path="商业.html"><a href="商业.html#如何细化市场"><i class="fa fa-check"></i><b>2.6.5</b> 如何细化市场</a></li>
+<li class="chapter" data-level="2.6.6" data-path="商业.html"><a href="商业.html#大众营销和关系营销的区别是什么"><i class="fa fa-check"></i><b>2.6.6</b> 大众营销和关系营销的区别是什么</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="商业.html"><a href="商业.html#商品与服务定价"><i class="fa fa-check"></i><b>2.7</b> 商品与服务定价</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="商业.html"><a href="商业.html#产品整体概念包括什么"><i class="fa fa-check"></i><b>2.7.1</b> ·产品整体概念包括什么</a></li>
+<li class="chapter" data-level="2.7.2" data-path="商业.html"><a href="商业.html#产品线和产品组合"><i class="fa fa-check"></i><b>2.7.2</b> 产品线和产品组合</a></li>
+<li class="chapter" data-level="2.7.3" data-path="商业.html"><a href="商业.html#营销人员如何为他们的产品和服务创造产品服务差异化"><i class="fa fa-check"></i><b>2.7.3</b> 营销人员如何为他们的产品和服务创造产品（服务）差异化？</a></li>
+<li class="chapter" data-level="2.7.4" data-path="商业.html"><a href="商业.html#什么是消费品"><i class="fa fa-check"></i><b>2.7.4</b> 什么是消费品</a></li>
+<li class="chapter" data-level="2.7.5" data-path="商业.html"><a href="商业.html#消费品和服务分为哪四大类它们是如何营销的"><i class="fa fa-check"></i><b>2.7.5</b> 消费品和服务分为哪四大类？它们是如何营销的？</a></li>
+<li class="chapter" data-level="2.7.6" data-path="商业.html"><a href="商业.html#包装有哪七个功能"><i class="fa fa-check"></i><b>2.7.6</b> 包装有哪七个功能</a></li>
+<li class="chapter" data-level="2.7.7" data-path="商业.html"><a href="商业.html#定义品牌品牌名称和商标吗"><i class="fa fa-check"></i><b>2.7.7</b> 定义品牌、品牌名称和商标吗</a></li>
+<li class="chapter" data-level="2.7.8" data-path="商业.html"><a href="商业.html#新产品开发的步骤"><i class="fa fa-check"></i><b>2.7.8</b> 新产品开发的步骤。</a></li>
+<li class="chapter" data-level="2.7.9" data-path="商业.html"><a href="商业.html#产品生命周期是什么"><i class="fa fa-check"></i><b>2.7.9</b> 产品生命周期是什么</a></li>
+<li class="chapter" data-level="2.7.10" data-path="商业.html"><a href="商业.html#定价"><i class="fa fa-check"></i><b>2.7.10</b> 定价</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="商业.html"><a href="商业.html#产品分销"><i class="fa fa-check"></i><b>2.8</b> 产品分销</a>
+<ul>
+<li class="chapter" data-level="2.8.1" data-path="商业.html"><a href="商业.html#什么是分销渠道"><i class="fa fa-check"></i><b>2.8.1</b> 什么是分销渠道</a></li>
+<li class="chapter" data-level="2.8.2" data-path="商业.html"><a href="商业.html#营销中介如何增值"><i class="fa fa-check"></i><b>2.8.2</b> 营销中介如何增值</a></li>
+<li class="chapter" data-level="2.8.3" data-path="商业.html"><a href="商业.html#使用这种中介的原则是什么"><i class="fa fa-check"></i><b>2.8.3</b> 使用这种中介的原则是什么</a></li>
+<li class="chapter" data-level="2.8.4" data-path="商业.html"><a href="商业.html#营销中介如何实施营销效用"><i class="fa fa-check"></i><b>2.8.4</b> 营销中介如何实施营销效用</a></li>
+<li class="chapter" data-level="2.8.5" data-path="商业.html"><a href="商业.html#什么是批发商"><i class="fa fa-check"></i><b>2.8.5</b> 什么是批发商？</a></li>
+<li class="chapter" data-level="2.8.6" data-path="商业.html"><a href="商业.html#哪些批发组织协助将货物从制造商转移到消费者"><i class="fa fa-check"></i><b>2.8.6</b> 哪些批发组织协助将货物从制造商转移到消费者</a></li>
+<li class="chapter" data-level="2.8.7" data-path="商业.html"><a href="商业.html#零售商"><i class="fa fa-check"></i><b>2.8.7</b> 零售商</a></li>
+<li class="chapter" data-level="2.8.8" data-path="商业.html"><a href="商业.html#非实体店零售有哪些形式"><i class="fa fa-check"></i><b>2.8.8</b> 非实体店零售有哪些形式？</a></li>
+<li class="chapter" data-level="2.8.9" data-path="商业.html"><a href="商业.html#四种分销系统"><i class="fa fa-check"></i><b>2.8.9</b> 四种分销系统</a></li>
+<li class="chapter" data-level="2.8.10" data-path="商业.html"><a href="商业.html#什么是物流"><i class="fa fa-check"></i><b>2.8.10</b> 什么是物流</a></li>
+<li class="chapter" data-level="2.8.11" data-path="商业.html"><a href="商业.html#哪些不同的运输方式"><i class="fa fa-check"></i><b>2.8.11</b> 哪些不同的运输方式</a></li>
+</ul></li>
+<li class="chapter" data-level="2.9" data-path="商业.html"><a href="商业.html#开展营销活动"><i class="fa fa-check"></i><b>2.9</b> 开展营销活动</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="商业.html"><a href="商业.html#促销"><i class="fa fa-check"></i><b>2.9.1</b> 促销</a></li>
+<li class="chapter" data-level="2.9.2" data-path="商业.html"><a href="商业.html#什么是广告"><i class="fa fa-check"></i><b>2.9.2</b> 什么是广告</a></li>
+<li class="chapter" data-level="2.9.3" data-path="商业.html"><a href="商业.html#企业对企业的销售过程有哪七个步骤"><i class="fa fa-check"></i><b>2.9.3</b> 企业对企业的销售过程有哪七个步骤</a></li>
+<li class="chapter" data-level="2.9.4" data-path="商业.html"><a href="商业.html#企业对消费者的销售过程有哪些步骤"><i class="fa fa-check"></i><b>2.9.4</b> 企业对消费者的销售过程有哪些步骤</a></li>
+<li class="chapter" data-level="2.9.5" data-path="商业.html"><a href="商业.html#什么是公共关系"><i class="fa fa-check"></i><b>2.9.5</b> 什么是公共关系</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="商业.html"><a href="商业.html#了解财务和会计"><i class="fa fa-check"></i><b>2.10</b> 了解财务和会计</a>
+<ul>
+<li class="chapter" data-level="2.10.1" data-path="商业.html"><a href="商业.html#什么是会计"><i class="fa fa-check"></i><b>2.10.1</b> 什么是会计</a></li>
+<li class="chapter" data-level="2.10.2" data-path="商业.html"><a href="商业.html#会计的步骤"><i class="fa fa-check"></i><b>2.10.2</b> 会计的步骤</a></li>
+<li class="chapter" data-level="2.10.3" data-path="商业.html"><a href="商业.html#资产负债表"><i class="fa fa-check"></i><b>2.10.3</b> 资产负债表</a></li>
+<li class="chapter" data-level="2.10.4" data-path="商业.html"><a href="商业.html#资产负债表上的主要账户是什么"><i class="fa fa-check"></i><b>2.10.4</b> 资产负债表上的主要账户是什么</a></li>
+<li class="chapter" data-level="2.10.5" data-path="商业.html"><a href="商业.html#什么是利润表"><i class="fa fa-check"></i><b>2.10.5</b> 什么是利润表</a></li>
+<li class="chapter" data-level="2.10.6" data-path="商业.html"><a href="商业.html#现金流量表"><i class="fa fa-check"></i><b>2.10.6</b> 现金流量表</a></li>
+<li class="chapter" data-level="2.10.7" data-path="商业.html"><a href="商业.html#比率分析在报告财务信息中的应用"><i class="fa fa-check"></i><b>2.10.7</b> 比率分析在报告财务信息中的应用</a></li>
+</ul></li>
+<li class="chapter" data-level="2.11" data-path="商业.html"><a href="商业.html#财务管理"><i class="fa fa-check"></i><b>2.11</b> 财务管理</a>
+<ul>
+<li class="chapter" data-level="2.11.1" data-path="商业.html"><a href="商业.html#财务规划中的三个预算"><i class="fa fa-check"></i><b>2.11.1</b> 财务规划中的三个预算</a></li>
+<li class="chapter" data-level="2.11.2" data-path="商业.html"><a href="商业.html#公司的主要财务需求是什么"><i class="fa fa-check"></i><b>2.11.2</b> 公司的主要财务需求是什么</a></li>
+<li class="chapter" data-level="2.11.3" data-path="商业.html"><a href="商业.html#债务融资和股权融资有什么不同"><i class="fa fa-check"></i><b>2.11.3</b> 债务融资和股权融资有什么不同</a></li>
+<li class="chapter" data-level="2.11.4" data-path="商业.html"><a href="商业.html#短期融资的不同来源"><i class="fa fa-check"></i><b>2.11.4</b> 短期融资的不同来源</a></li>
+<li class="chapter" data-level="2.11.5" data-path="商业.html"><a href="商业.html#长期融资的不同来源"><i class="fa fa-check"></i><b>2.11.5</b> 长期融资的不同来源</a></li>
+</ul></li>
+<li class="chapter" data-level="2.12" data-path="商业.html"><a href="商业.html#证劵融资"><i class="fa fa-check"></i><b>2.12</b> 证劵融资</a>
+<ul>
+<li class="chapter" data-level="2.12.1" data-path="商业.html"><a href="商业.html#通过发行股票获得股权融资的利弊"><i class="fa fa-check"></i><b>2.12.1</b> 通过发行股票获得股权融资的利弊</a></li>
+<li class="chapter" data-level="2.12.2" data-path="商业.html"><a href="商业.html#通过发行债券获得债务融资的利弊"><i class="fa fa-check"></i><b>2.12.2</b> 通过发行债券获得债务融资的利弊</a></li>
+<li class="chapter" data-level="2.12.3" data-path="商业.html"><a href="商业.html#选择投资产品的标准是什么"><i class="fa fa-check"></i><b>2.12.3</b> 选择投资产品的标准是什么</a></li>
+<li class="chapter" data-level="2.12.4" data-path="商业.html"><a href="商业.html#股票"><i class="fa fa-check"></i><b>2.12.4</b> 股票</a></li>
+<li class="chapter" data-level="2.12.5" data-path="商业.html"><a href="商业.html#共同基金和交易型开放式指数基金etf"><i class="fa fa-check"></i><b>2.12.5</b> 共同基金和交易型开放式指数基金（ETF）</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="行业.html"><a href="行业.html"><i class="fa fa-check"></i><b>3</b> 行业</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="行业.html"><a href="行业.html#中国行业分类"><i class="fa fa-check"></i><b>3.1</b> 中国行业分类</a></li>
+<li class="chapter" data-level="3.2" data-path="行业.html"><a href="行业.html#如何分析一个行业"><i class="fa fa-check"></i><b>3.2</b> 如何分析一个行业</a></li>
+<li class="chapter" data-level="3.3" data-path="行业.html"><a href="行业.html#如何找到行业报告"><i class="fa fa-check"></i><b>3.3</b> 如何找到行业报告</a></li>
+<li class="chapter" data-level="3.4" data-path="行业.html"><a href="行业.html#如何自己写一份行业报告"><i class="fa fa-check"></i><b>3.4</b> 如何自己写一份行业报告</a></li>
+<li class="chapter" data-level="3.5" data-path="行业.html"><a href="行业.html#备注"><i class="fa fa-check"></i><b>3.5</b> 备注</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="行业.html"><a href="行业.html#swot-分析"><i class="fa fa-check"></i><b>3.5.1</b> SWOT 分析</a></li>
+<li class="chapter" data-level="3.5.2" data-path="行业.html"><a href="行业.html#pestel分析"><i class="fa fa-check"></i><b>3.5.2</b> PESTEL分析</a></li>
+<li class="chapter" data-level="3.5.3" data-path="行业.html"><a href="行业.html#五力分析"><i class="fa fa-check"></i><b>3.5.3</b> 五力分析：</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="投资.html"><a href="投资.html"><i class="fa fa-check"></i><b>4</b> 投资</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="投资.html"><a href="投资.html#风险资产配置"><i class="fa fa-check"></i><b>4.1</b> 风险资产配置</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="投资.html"><a href="投资.html#如何刻画资产组合收益风险并构造最优风险资产组合"><i class="fa fa-check"></i><b>4.1.1</b> 如何刻画资产组合收益风险并构造最优风险资产组合</a></li>
+<li class="chapter" data-level="4.1.2" data-path="投资.html"><a href="投资.html#投资的决策可以看作自上而下的过程"><i class="fa fa-check"></i><b>4.1.2</b> 投资的决策可以看作自上而下的过程：</a></li>
+<li class="chapter" data-level="4.1.3" data-path="投资.html"><a href="投资.html#资产分类"><i class="fa fa-check"></i><b>4.1.3</b> 资产分类</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="投资.html"><a href="投资.html#债券资产组合"><i class="fa fa-check"></i><b>4.2</b> 债券资产组合</a></li>
+<li class="chapter" data-level="4.3" data-path="投资.html"><a href="投资.html#如何对投资组合业绩评价"><i class="fa fa-check"></i><b>4.3</b> 如何对投资组合业绩评价</a></li>
+<li class="chapter" data-level="4.4" data-path="投资.html"><a href="投资.html#相关概念"><i class="fa fa-check"></i><b>4.4</b> 相关概念</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="投资.html"><a href="投资.html#现代投资组合理论"><i class="fa fa-check"></i><b>4.4.1</b> 现代投资组合理论</a></li>
+<li class="chapter" data-level="4.4.2" data-path="投资.html"><a href="投资.html#指数模型"><i class="fa fa-check"></i><b>4.4.2</b> 指数模型</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="管理.html"><a href="管理.html"><i class="fa fa-check"></i><b>5</b> 管理</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="管理.html"><a href="管理.html#决策"><i class="fa fa-check"></i><b>5.1</b> 决策</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="管理.html"><a href="管理.html#有效决策方法"><i class="fa fa-check"></i><b>5.1.1</b> 有效决策方法：</a></li>
+<li class="chapter" data-level="5.1.2" data-path="管理.html"><a href="管理.html#有效决策观点"><i class="fa fa-check"></i><b>5.1.2</b> 有效决策观点：</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="管理.html"><a href="管理.html#管理沟通"><i class="fa fa-check"></i><b>5.2</b> 管理沟通</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="管理.html"><a href="管理.html#管理沟通理论"><i class="fa fa-check"></i><b>5.2.1</b> 管理沟通理论：</a></li>
+<li class="chapter" data-level="5.2.2" data-path="管理.html"><a href="管理.html#管理沟通方法"><i class="fa fa-check"></i><b>5.2.2</b> 管理沟通方法：</a></li>
+<li class="chapter" data-level="5.2.3" data-path="管理.html"><a href="管理.html#管理沟通观点"><i class="fa fa-check"></i><b>5.2.3</b> 管理沟通观点：</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="管理.html"><a href="管理.html#核查-控制和管理"><i class="fa fa-check"></i><b>5.3</b> 核查, 控制和管理</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="管理.html"><a href="管理.html#核查check"><i class="fa fa-check"></i><b>5.3.1</b> 核查（Check）：</a></li>
+<li class="chapter" data-level="5.3.2" data-path="管理.html"><a href="管理.html#控制control"><i class="fa fa-check"></i><b>5.3.2</b> 控制（Control）：</a></li>
+<li class="chapter" data-level="5.3.3" data-path="管理.html"><a href="管理.html#管理manage"><i class="fa fa-check"></i><b>5.3.3</b> 管理（Manage）：</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="管理.html"><a href="管理.html#项目管理框架"><i class="fa fa-check"></i><b>5.4</b> 项目管理框架</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="管理.html"><a href="管理.html#项目整合管理"><i class="fa fa-check"></i><b>5.4.1</b> 项目整合管理</a></li>
+<li class="chapter" data-level="5.4.2" data-path="管理.html"><a href="管理.html#项目范围管理"><i class="fa fa-check"></i><b>5.4.2</b> 项目范围管理</a></li>
+<li class="chapter" data-level="5.4.3" data-path="管理.html"><a href="管理.html#项目进度管理"><i class="fa fa-check"></i><b>5.4.3</b> 项目进度管理</a></li>
+<li class="chapter" data-level="5.4.4" data-path="管理.html"><a href="管理.html#项目成本管理"><i class="fa fa-check"></i><b>5.4.4</b> 项目成本管理</a></li>
+<li class="chapter" data-level="5.4.5" data-path="管理.html"><a href="管理.html#项目资源管理"><i class="fa fa-check"></i><b>5.4.5</b> 项目资源管理</a></li>
+<li class="chapter" data-level="5.4.6" data-path="管理.html"><a href="管理.html#项目沟通管理"><i class="fa fa-check"></i><b>5.4.6</b> 项目沟通管理</a></li>
+<li class="chapter" data-level="5.4.7" data-path="管理.html"><a href="管理.html#项目风险管理"><i class="fa fa-check"></i><b>5.4.7</b> 项目风险管理</a></li>
+<li class="chapter" data-level="5.4.8" data-path="管理.html"><a href="管理.html#项目采购管理"><i class="fa fa-check"></i><b>5.4.8</b> 项目采购管理</a></li>
+<li class="chapter" data-level="5.4.9" data-path="管理.html"><a href="管理.html#相关方管理"><i class="fa fa-check"></i><b>5.4.9</b> 相关方管理</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="管理.html"><a href="管理.html#事业环境因素-和-组织过程资产"><i class="fa fa-check"></i><b>5.5</b> 事业环境因素 和 组织过程资产</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="管理.html"><a href="管理.html#事业环境因素"><i class="fa fa-check"></i><b>5.5.1</b> 事业环境因素</a></li>
+<li class="chapter" data-level="5.5.2" data-path="管理.html"><a href="管理.html#组织过程资产"><i class="fa fa-check"></i><b>5.5.2</b> 组织过程资产</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="技术性的一些方法.html"><a href="技术性的一些方法.html"><i class="fa fa-check"></i><b>6</b> 技术性的一些方法</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="技术性的一些方法.html"><a href="技术性的一些方法.html#如何完成一个策划方案"><i class="fa fa-check"></i><b>6.1</b> 如何完成一个策划方案</a></li>
+<li class="chapter" data-level="6.2" data-path="技术性的一些方法.html"><a href="技术性的一些方法.html#制定sop表"><i class="fa fa-check"></i><b>6.2</b> 制定SOP表</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="技术性的一些方法.html"><a href="技术性的一些方法.html#制定sop的步骤"><i class="fa fa-check"></i><b>6.2.1</b> 制定SOP的步骤</a></li>
+<li class="chapter" data-level="6.2.2" data-path="技术性的一些方法.html"><a href="技术性的一些方法.html#一个案例"><i class="fa fa-check"></i><b>6.2.2</b> 一个案例</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="技术性的一些方法.html"><a href="技术性的一些方法.html#如何制定阶段性发展标"><i class="fa fa-check"></i><b>6.3</b> 如何制定阶段性发展标</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="待定.html"><a href="待定.html"><i class="fa fa-check"></i><b>7</b> 待定</a></li>
+<li class="chapter" data-level="8" data-path="待定-1.html"><a href="待定-1.html"><i class="fa fa-check"></i><b>8</b> 待定</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">商业与管理</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="技术性的一些方法" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> 技术性的一些方法<a href="技术性的一些方法.html#技术性的一些方法" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="如何完成一个策划方案" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> 如何完成一个策划方案<a href="技术性的一些方法.html#如何完成一个策划方案" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>项目目标制定：</li>
+</ol>
+<ul>
+<li><p>明确项目目标：首先，明确定义项目的目标和愿景。这应该包括明确的项目范围、预期成果和期望的绩效指标。例如，如果你正在策划一项市场推广活动，目标可能是提高销售额。</p></li>
+<li><p>目标可衡量性：确保项目目标是可衡量的，以便在项目完成后进行绩效评估。</p></li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>计划制定：</li>
+</ol>
+<ul>
+<li><p>项目规划：制定项目计划，包括项目的时间表、预算、资源需求和项目活动。在市场推广活动的例子中，计划可能包括广告预算、推广渠道、时间表等。</p></li>
+<li><p>风险评估：评估项目可能面临的风险，制定风险管理计划，以应对潜在问题。</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>执行方案：</li>
+</ol>
+<ul>
+<li><p>实施计划：根据项目计划执行项目活动。确保按照计划的时间表和预算执行。</p></li>
+<li><p>监控进度：持续监控项目的进展，以确保项目按计划执行。如果发现偏差，立即采取纠正措施。</p></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>绩效评估：</li>
+</ol>
+<ul>
+<li><p>收集数据：在项目完成后，收集相关数据，以便评估项目绩效。这可能包括销售数据、客户反馈、成本数据等。</p></li>
+<li><p>比较绩效：将实际绩效与预期绩效进行比较。这有助于确定项目是否达到了目标。</p></li>
+</ul>
+<p>总结结果：总结绩效评估的结果，包括项目的成功和教训。如果项目达到了目标，可以考虑下一步行动。</p>
+</div>
+<div id="制定sop表" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> 制定SOP表<a href="技术性的一些方法.html#制定sop表" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>SOP（Standard Operating Procedure）是标准操作规程的缩写，是一种文件，用于明确规定组织或团队在执行特定任务或流程时应遵循的标准步骤和最佳实践。</p>
+<div id="制定sop的步骤" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> 制定SOP的步骤<a href="技术性的一些方法.html#制定sop的步骤" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>确定SOP的目标：</li>
+</ol>
+<ul>
+<li>明确要制定SOP的目的和目标，确保团队了解SOP的价值。</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>确定SOP的范围：</li>
+</ol>
+<ul>
+<li>定义SOP将涵盖的具体工作流程、任务或过程。</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>识别关键步骤：</li>
+</ol>
+<ul>
+<li>识别工作流程中的关键步骤和活动，确保SOP涵盖了所有必要的操作。</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>制定SOP表格：</li>
+</ol>
+<p>创建SOP表格，包括以下列：
+* 步骤编号：每个步骤的唯一编号。
+* 步骤描述：详细描述每个步骤的操作和要求。
+* 执行者：执行每个步骤的责任人员。
+* 执行频率：步骤的执行频率（一次性、每天、每周等）。
+* 参考文档：与该步骤相关的参考文档或资源。
+* 风险评估：识别与步骤相关的潜在风险和问题。
+* 审批人：需要审批SOP的人员。
+* 批准日期：SOP的批准日期。
+* 修订历史：SOP的修订历史记录。</p>
+<ol start="5" style="list-style-type: decimal">
+<li>填写SOP表格：</li>
+</ol>
+<ul>
+<li>详细填写SOP表格中的每个部分，确保提供清晰的信息。</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>审批和批准SOP：</li>
+</ol>
+<ul>
+<li>提交SOP进行审批，并确保得到相关方的批准。</li>
+</ul>
+<ol start="7" style="list-style-type: decimal">
+<li>培训和沟通：</li>
+</ol>
+<ul>
+<li>培训相关人员，使他们了解SOP的内容和执行方法。</li>
+<li>确保SOP被适当地沟通给执行者。</li>
+</ul>
+<ol start="8" style="list-style-type: decimal">
+<li>实施和执行：</li>
+</ol>
+<ul>
+<li>在工作流程中实施和执行SOP，确保所有步骤按照规定执行。</li>
+</ul>
+<ol start="9" style="list-style-type: decimal">
+<li>监测和修订：</li>
+</ol>
+<ul>
+<li>定期监测SOP的执行，检查是否需要修订以提高效率或适应变化的需求。</li>
+</ul>
+<ol start="10" style="list-style-type: decimal">
+<li>文件存档：</li>
+</ol>
+<ul>
+<li>存档SOP文件以备将来参考和审查。</li>
+</ul>
+</div>
+<div id="一个案例" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> 一个案例<a href="技术性的一些方法.html#一个案例" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>假设您要制定一个采购SOP表格，以确保采购流程的一致性和规范。以下是一个简化版本的SOP表格示例：</p>
+<p><img src="https://pic1.zhimg.com/80/v2-b44197a0216355339a7028d5bb05a789_1440w.png" /></p>
+<p>这是一个简单的采购SOP表格示例，包括了步骤编号、步骤描述、执行者、执行频率、参考文档、风险评估、审批人、批准日期和修订历史。这个SOP表格可以帮助确保采购流程的一致性和质量，降低了潜在风险。实际SOP表格可能更加复杂和详细，具体取决于组织的需求和复杂性。</p>
+</div>
+</div>
+<div id="如何制定阶段性发展标" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> 如何制定阶段性发展标<a href="技术性的一些方法.html#如何制定阶段性发展标" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>例子</p>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="37%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>阶段</th>
+<th>阶段性发展目标</th>
+<th>阶段性需求</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>阶段1</td>
+<td>建立公司网站</td>
+<td>- 获取域名<br> - 设计网站</td>
+</tr>
+<tr class="even">
+<td>阶段2</td>
+<td>增加在线销售渠道</td>
+<td>- 集成电子支付系统<br> - 制定在线销售策略</td>
+</tr>
+<tr class="odd">
+<td>阶段3</td>
+<td>拓展市场份额</td>
+<td>- 市场调研和竞争分析<br> - 制定营销计划</td>
+</tr>
+<tr class="even">
+<td>阶段4</td>
+<td>提高客户满意度</td>
+<td>- 客户调查和反馈收集<br> - 培训客户服务团队</td>
+</tr>
+</tbody>
+</table>
+<p>在这个示例中，阶段性发展目标列用于描述每个阶段的主要目标，而阶段性需求列包括了实现这些目标所需的具体需求和任务。</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="管理.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="待定.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/05-blocks.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
